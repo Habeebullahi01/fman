@@ -1,0 +1,20 @@
+Source: fman
+Section: utils
+Priority: optional
+Maintainer: Lawal Habeebullahi Olalekan <lawalhabeebullahi008@gmail.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.2
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/fman
+#Vcs-Git: https://salsa.debian.org/debian/fman.git
+
+Package: fman
+Architecture: any
+Multi-Arch: foreign
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Save command manuals to a text file
+ This package saves the manual entry of a specified command to a file. This package is quite simple and almost unnessary. It's main purpose is for the creator/maintainer to build a shell script that uses options and arguments (among other things) and also have an experience of building, packaging, and releasing a linux package.
